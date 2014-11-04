@@ -17,7 +17,7 @@ def get_digits(text):
 def valid_br_cpf(cpf):
     """
     Accept an string parameter cpf and
-    Check if is brasilian CPF valid.
+    Check if is brazilian CPF valid.
     Return True or False
     """
     # if cpf is string

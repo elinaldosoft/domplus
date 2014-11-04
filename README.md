@@ -10,6 +10,6 @@ Usage
 -----
     from domplus import utilplus
     
-    # Check if brasilian cpf is valid
+    # Check if brazilian cpf is valid
     # Return True or False
     utilplus.valid_br_cpf('03167158590')
