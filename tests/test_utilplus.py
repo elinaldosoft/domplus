@@ -42,7 +42,7 @@ def test_valid_br_cnpj():
     Test valid_br_cnpj
     """
     # True
-    assert_equal(True, utilplus.valid_br_cnpj('1144477700016'))
+    assert_equal(True, utilplus.valid_br_cnpj('11444777000161'))
     assert_equal(True, utilplus.valid_br_cnpj('11.444.777/0001-61'))
 
     # False

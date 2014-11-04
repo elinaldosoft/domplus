@@ -49,8 +49,8 @@ def valid_br_cpf(cpf):
     result = 0
 
     for i in cpf[:9]:
-        result = result + (int(i) * multi)
-        multi = multi - 1
+        result += int(i) * multi
+        multi -= 1
 
     remainder = result % 11
 
@@ -66,8 +66,8 @@ def valid_br_cpf(cpf):
     result = 0
 
     for i in assemble_cpf:
-        result = result + (int(i) * multi)
-        multi = multi - 1
+        result += int(i) * multi
+        multi -= 1
 
     remainder = result % 11
 
@@ -83,7 +83,7 @@ def valid_br_cpf(cpf):
 
 def valid_br_cnpj(cnpj):
     """
-    Accept an string parameter cpf and
+    Accept an string parameter CNPJ and
     Check if is brazilian CNPJ valid.
     Return True or False
     """
@@ -116,7 +116,7 @@ def valid_br_cnpj(cnpj):
     multi = 5
     result = 0
     for i in cnpj[:12]:
-        result = result + (int(i) * multi)
+        result += int(i) * multi
         multi -= 1
         if multi < 2:
             multi = 9
@@ -135,8 +135,8 @@ def valid_br_cnpj(cnpj):
     result = 0
 
     for i in assemble_cnpj:
-        result = result + (int(i) * multi)
-        multi = multi - 1
+        result += int(i) * multi
+        multi -= 1
         if multi < 2:
             multi = 9
 
